@@ -1,0 +1,653 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+body {
+    margin: inherit;
+    min-width: 1900px;
+}
+
+.container {
+    width: 980px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container1 {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+/************
+Header
+************/
+/************
+Top-Bar
+************/
+.top-bar {
+    width: 100%;
+    height: 45px;
+    background-color: #333;
+    color: #858585;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navmenu {
+    width: 420px;
+    height: 45px;
+    display: flex;
+    padding: 0px 0px;
+    margin-left: auto;
+}
+a.blubtn {
+    width:75px;
+    height: 45px;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    border: none;
+    color: #858585;
+    transition: .5s;
+
+}
+a.blubtn:hover {
+    background-color: #00c8c8;
+    transition: .5s;
+    color: white;
+
+
+}
+
+#cart {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-left: 50px;
+    width: 140px;
+    font-size: 13px;
+
+}
+#current {
+    width: 100px;
+}
+/************
+Header
+************/
+.header {
+    width: 100%;
+    height: 111px;
+    text-align: center;
+    color: white;
+
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+}
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+    margin-right: auto;
+}
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #454647;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: absolute;
+    bottom: 100px;
+    right: 25vh;
+    border: 2px solid #737373;
+    padding: 10px 30px;
+}
+.btn:hover {
+    background-color: #737373;
+    color: white;
+    transition: color,background-color 0.2s;
+}
+
+.iw-modal-btn {
+
+    color: #333333; /*цвет шрифта*/
+    text-align:center;
+    display:inline-block;
+    padding:10px 20px; /*внутренние отступы*/
+    font-family: 'Montserrat', sans-serif;
+    text-decoration:none;
+    font-size:13px; /*размер шрифта*/
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+}
+.iw-modal-btn:hover {
+    background:#00c8c8; /*цвет фона при наведении*/
+}
+
+.iw-modal {
+    opacity: 0; /*изначально этот блок должен быть прозрачным*/
+    background: rgba(0,0,0,0.7); /*задаём цвет фона*/
+    pointer-events: none; /*делаем чтобы по элементу нельзя было кликнуть когда он прозрачный*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+.iw-modal:target {
+    opacity: 1; /*при клике блок становится видимым*/
+    pointer-events: auto; /*теперь по блоку можно кликать мышкой*/
+    overflow-y: auto; /*прокрутка по вертикли страницы*/
+}
+.iw-modal-wrapper {
+    margin:auto; /*выравниваем модальное окно по центру по горизонтали*/
+    margin-top:25vh; /*отступ сверху можно задавать в px, % или vh*/
+}
+/*CSS-свойства для блока, содержащего контент модального окна */
+.iw-CSS-modal-inner {
+    position: relative;
+    background: #fff; /*цвет фона*/
+    border: 1px solid #ccc; /*цвет и толщина рамки*/
+    border-radius: 0px; /*радиус скругления углов*/
+}
+/*CSS-свойства заголовка модального окна */
+.iw-modal-header {
+    display: flex;
+    padding: 15px;/*внутренний отступ*/
+    background:#f1f1f1;/*цвет фона*/
+    position:relative;
+}
+.iw-modal-title {
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    font-size: 16px; /*размер шрифта*/
+    color:#333; /*цвет шрифта*/
+    /*жирность шрифта*/
+    line-height: 1.5; /*высота строки*/
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 15px;
+
+}
+.iw-modal-title a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-bottom: none;
+    text-decoration: none;
+    color: #b9b9b9;
+}
+.iw-modal-title a:hover {
+    color: #333;
+    transition: color 0.2s;
+}
+.iw-modal-title1 {
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    font-size: 16px; /*размер шрифта*/
+    color:#333; /*цвет шрифта*/
+    /*жирность шрифта*/
+    line-height: 1.5; /*высота строки*/
+    margin-top: 35px;
+    margin-bottom: 0;
+    padding: 15px;
+
+}
+.iw-modal-title1 a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-bottom: none;
+    text-decoration: none;
+    color: #b9b9b9;
+}
+.iw-modal-title1 a:hover {
+    color: #333;
+    transition: color 0.2s;
+}
+
+/*CSS для кнопки закрытия*/
+.iw-close {
+    position:absolute;
+    top:15px; /*отступ сверху*/
+    right:10px; /*отступ справа*/
+    font-size: 24px; /*размер шрифта*/
+    color: #555; /*цвет шрифта*/
+    text-decoration: none;
+}
+.iw-close:hover, .iw-close:focus {
+    color: #000; /*цвет шрифта при наведении*/
+    cursor: pointer;
+}
+/*CSS для блока с текстом*/
+.iw-modal-img {
+    padding: 15px 20px; /*внутренний отступ*/
+}
+/**MEDIA**/
+@media (min-width: 550px) {
+    .iw-modal-wrapper {
+        max-width: 450px;
+    }
+}
+
+/***********Search***********/
+
+* {box-sizing: border-box;}
+form {
+    position: relative;
+    width: 190px;
+
+}
+input, button {
+    outline: none;
+    background: transparent;
+    margin-left: 80px;
+}
+input {
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+    border: 2px solid #e7e7e7;
+}
+button {
+    border: none;
+    height: 30px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: -80px;
+    cursor: pointer;
+}
+button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #e7e7e7;
+}
+input:focus {
+    border-color: #e7e7e7;
+}
+/************
+titleContainer
+*************/
+.headcont {
+    width: 100%;
+    height: 450px;
+    background: #333333 url("img/container.jpg") no-repeat center;
+}
+.titleContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+
+}
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+/***************
+CONTENT
+*****************/
+.content {
+    width: auto;
+    height: 330px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subcontinent {
+    width: 1170px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AdminBlock {
+    height: 100%;
+    padding: 0px 10px;
+}
+.Cblock {
+    width: 365px;
+    height: 100%;
+    background-color: white;
+}
+.Cblock2 {
+    width: 365px;
+    height: 100%;
+    background-color: white;
+}
+.Ctitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 15px;
+    padding-top: 40px;
+}
+.Csubtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.Ctext {
+    font-family: 'Roboto' , sans-serif;
+    font-size: 15px;
+    color: #727272;
+    margin-bottom: 40px;
+}
+.Cbtn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #333333;
+    text-decoration: none;
+
+    border: #737373 solid 1px;
+    padding: 15px 30px;
+}
+.Cbtn:hover {
+    background-color: #00c8c8;
+    color: white;
+    transition: background-color,color 0.2s;
+}
+/*Maps*/
+.dg-widget-link {
+    width: 100%;
+    height: 100%;
+}
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.blockcity {
+    width: 663px;
+    height: 530px;
+    background-color: #e8e8e8;
+}
+.block-of-text {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#box1 {
+    display: block;
+}
+.blockm {
+    padding-left: 40px;
+}
+.info {
+    width: 100%;
+    height: 100%;
+}
+.textnav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 10px 0px;
+
+}
+.textnav  i {
+    color: #333333;
+}
+/*Icon*/
+.navicon {
+    width: 30px;
+    height: 100%;
+    padding-top: 40px;
+    display: flex;
+}
+.iconnav {
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: #333333;
+    color: white;
+    padding: 3px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.iconnav2 {
+    font-size: 18px;
+    background-color: #333333;
+    border-radius: 15px;
+    margin: 0 10px;
+    padding: 3px 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.iconnav a {
+    text-decoration: none;
+    color: white;
+}
+.iconnav2 a {
+    text-decoration: none;
+    color: white;
+}
+.nc {
+    text-decoration: none;
+}
+
+/***************
+FOOTER
+******************/
+.footerbrand {
+    width: 100%;
+    height: 595px;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fbcontainer {
+    width: 1200px;
+    height: 595px;
+
+    justify-content: center;
+    align-items: center;
+}
+.fbtext {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    /*margin-top: 20px;*/
+}
+.fbtext h5 {
+    text-transform: uppercase;
+}
+/*Title*/
+.iw-modal-title {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-size: 16px; /*размер шрифта*/
+    color: #333333; /*цвет шрифта*/
+    /*жирность шрифта*/
+    line-height: 1.5; /*высота строки*/
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 15px;
+
+}
+.iw-modal-title a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-bottom: none;
+    text-decoration: none;
+    color: #7b7b7b;
+}
+.iw-modal-title a:hover {
+    color: #333;
+    transition: color 0.2s;
+}
+.iw-modal-title p:active {
+    color: #11cbcb;
+}
+
+.iw-modal-title1 {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-size: 16px; /*размер шрифта*/
+    color: #333333; /*цвет шрифта*/
+    /*жирность шрифта*/
+    line-height: 1.5; /*высота строки*/
+    margin-top: 35px;
+    margin-bottom: 0;
+    padding: 15px;
+
+}
+.iw-modal-title1 a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-bottom: none;
+    text-decoration: none;
+    color: #7b7b7b;
+}
+.iw-modal-title1 a:hover {
+    color: #333;
+    transition: color 0.2s;
+}
+.iw-modal-title1 p:active {
+    color: #11cbcb;
+}
+/*****Banners*****/
+.fbbanners {
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fbblock {
+    width: 45%;
+    height: 100%;
+    margin: 0px 15px;
+
+}
+.fbaward {
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fbsocial {
+    width: 100%;
+    height: 100%;
+
+    background-color: #00c8c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fbtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.fbicon {
+    font-size: 36px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Z {
+    padding: 0px 55px;
+}
+.fbicon a {
+    color: white;
+    text-decoration: none;
+}
+/******Top Bar*******/
+.footer-bar {
+    width: 100%;
+    height: 45px;
+    background-color: #333;
+    color: #858585;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navmenu {
+    width: 420px;
+    height: 45px;
+    display: flex;
+    padding: 0px 0px;
+    margin-left: auto;
+}
+a.fblubtn {
+    width:200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    border: none;
+    color: #858585;
+
+}
+#current1 {
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+

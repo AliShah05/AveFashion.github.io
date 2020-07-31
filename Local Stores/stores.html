@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1900">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AVE</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/9b09351531.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="plugins/jquery-ui-1.12.1"></script>
+
+</head>
+<body>
+<!---------------------------
+HEADER
+----------------------------->
+<body>
+
+<div class="top-bar">
+    <div class="container">
+        <div class="currency"><a href="C:\Users\alish\Desktop\обучение\Новая папка\ave\www\Home/index.html" class="blubtn" id="current">Currency : GBP</a></div>
+        <nav class="navmenu">
+            <a href="C:\Users\alish\Desktop\обучение\Новая папка\ave\www\Sign In/sign.html" class="blubtn" >Register</a>
+            <a href="C:\Users\alish\Desktop\обучение\Новая папка\ave\www\Sign In/sign.html" class="blubtn" >Sign In</a>
+            <a href="" class="blubtn" id="cart"><i class="fas fa-shopping-cart">     empty</i></a>
+        </nav>
+    </div>
+</div>
+
+<div class="header" id="head">
+    <div class="container1">
+        <div class="logo"><b>avenue </b>fashion</div>
+
+        <a href="C:\Users\alish\Desktop\обучение\Новая папка\ave\www\Men/men.html" class="iw-modal-btn">mens</a>
+        <a href="C:\Users\alish\Desktop\обучение\Новая папка\ave\www\Womens/womens.html" class="iw-modal-btn">womens</a>
+        <a href="C:\Users\alish\Desktop\обучение\Новая папка\ave\www\The Brand/brand.html" class="iw-modal-btn">the brand</a>
+        <a href="Stores.html" class="iw-modal-btn">local stores</a>
+        <a href="C:\Users\alish\Desktop\обучение\Новая папка\ave\www\Lookbook/look.html" class="iw-modal-btn">look book</a>
+        <form>
+            <input type="text" placeholder="Search...">
+            <button type="submit"></button>
+        </form>
+    </div>
+</div>
+</div>
+
+<div class="headcont">
+    <div class="titleContainer">
+        <div class="title"><b>Local</b>  stores</div>
+
+        <div class="text">Find a store near you</div>
+    </div>
+</div>
+
+<!------------
+Modal Window
+----------------->
+<div id="iw-modal" class="iw-modal">
+    <div class="iw-modal-wrapper">
+        <div class="iw-CSS-modal-inner">
+            <div class="iw-modal-header">
+                <div class="iw-modal-title">
+                    <h5><b>Casuale</b></h5>
+                    <a href=""><p>Jackets</p></a>
+                    <a href=""><p>Hoodies & Sweatshirts</p></a>
+                    <a href=""><p>Polo Shirts</p></a>
+                    <a href=""><p> Sportswear</p></a>
+                    <a href=""><p>Trousers & Chinos</p></a>
+                    <a href=""><p>T-Shirts</p></a>
+                </div>
+                <div class="iw-modal-title">
+                    <h5><b>Formal</b></h5>
+                    <a href=""><p>Jackets</p></a>
+                    <a href=""><p>Shirts</p></a>
+                    <a href=""><p>Suits</p></a>
+                    <a href=""><p>Trousers</p></a>
+                </div>
+
+                <a href="#close" title="Закрыть" class="iw-close">×</a>
+            </div>
+            <div class="iw-modal-img">
+                <img src="img/Sale.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------
+CONTENT
+--------------->
+<div class="content">
+    <div class="subcontinent">
+        <div class="AdminBlock">
+            <div class="Cblock">
+                <div class="London">
+                    <div class="Ctitle">London</div>
+                    <div class="Csubtitle">180-182 Regent Street, London, W1B 5BT</div>
+                    <div class="Ctext">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.
+                    </div>
+                    <a class="Cbtn" onclick="openbox('box1')">view Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="AdminBlock">
+            <div class="Cblock2">
+                <div class="NewYork">
+                <div class="Ctitle">New York</div>
+                <div class="Csubtitle">109 Columbus Circle, New York, NY 10023</div>
+                <div class="Ctext">
+                    Nunc non posuere nisl. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.                </div>
+                <a class="Cbtn" onclick="openbox('box2')">view Details</a>
+            </div>
+            </div>
+        </div>
+        <div class="AdminBlock">
+            <div class="Cblock2">
+                <div class="Paris">
+                    <div class="Ctitle">Paris</div>
+                    <div class="Csubtitle">2133 Rue Saint-Honoré, 75001 Paris</div>
+                    <div class="Ctext">
+                        Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.                    </div>
+                    <a class="Cbtn" onclick="openbox('box3')">view Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="maps">
+   <a class="dg-widget-link" href="http://2gis.ru/moscow/firm/70000001039547396/center/51.511561, -0.139167/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Москвы</a><div class="dg-widget-link"><a href="http://2gis.ru/moscow/center/37.551681,55.887681/zoom/16/routeTab/rsType/bus/to/37.551681,55.887681╎Ave Sport, интернет-магазин спортивных товаров?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Ave Sport, интернет-магазин спортивных товаров</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":1550,"height":530,"borderColor":"#a3a3a3","pos":{"lat":55.88782798716234,"lon":37.55167722702027,"zoom":16},"opt":{"city":"moscow"},"org":[{"id":"70000001039547396"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+    <div class="blockcity">
+        <div class="block-of-text" id="box1" >
+            <div class="blockm">
+                <div class="info">
+                    <div class="Ctitle">London</div>
+                    <div class="Csubtitle">180-182 Regent Street, London, W1B 5BT</div>
+                    <div class="Ctext">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.
+                    </div>
+                    <div class="navigation">
+                        <div class="textnav"><i class="fas fa-map-marker-alt"></i>  180-182 Regent Street, London, W1B 5BT</div>
+                        <div class="textnav"><i class="fas fa-phone-alt"></i> 0123-456-789</div>
+                        <div class="textnav"><i class="fas fa-share"></i> www.yourwebsite.com</div>
+                        <div class="textnav"><i class="far fa-envelope"></i> support@yourwebsite.com</div>
+                        <div class="textnav"><i class="far fa-clock"></i> Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</div>
+                    </div>
+                    <div class="navicon">
+                        <div class="iconnav"><a href="" class="nc"><i class="fab fa-facebook-f"></i></a></div>
+                        <div class="iconnav2"><a href="" class="nc"><i class="fab fa-twitter"></i></a></div>
+                        <div class="iconnav"><a href="" class="nc"><i class="fab fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-of-text" id="box2">
+            <div class="blockm">
+                <div class="info">
+                    <div class="Ctitle">New York</div>
+                    <div class="Csubtitle">109 Columbus Circle, New York, NY 10023</div>
+                    <div class="Ctext">
+                        Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.                    </div>
+                    <div class="navigation">
+                        <div class="textnav"><i class="fas fa-map-marker-alt"></i>  109 Columbus Circle, New York, NY 10023</div>
+                        <div class="textnav"><i class="fas fa-phone-alt"></i> 0123-456-789</div>
+                        <div class="textnav"><i class="fas fa-share"></i> www.yourwebsite.com</div>
+                        <div class="textnav"><i class="far fa-envelope"></i> support@yourwebsite.com</div>
+                        <div class="textnav"><i class="far fa-clock"></i> Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</div>
+                    </div>
+                    <div class="navicon">
+                        <div class="iconnav"><a href="" class="nc"><i class="fab fa-facebook-f"></i></a></div>
+                        <div class="iconnav2"><a href="" class="nc"><i class="fab fa-twitter"></i></a></div>
+                        <div class="iconnav"><a href="" class="nc"><i class="fab fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-of-text" id="box3">
+            <div class="blockm">
+                <div class="info">
+                    <div class="Ctitle">Paris</div>
+                    <div class="Csubtitle">2133 Rue Saint-Honoré, 75001 Paris</div>
+                    <div class="Ctext">
+                        Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.                    </div>
+                    <div class="navigation">
+                        <div class="textnav"><i class="fas fa-map-marker-alt"></i>  2133 Rue Saint-Honoré, 75001 Paris</div>
+                        <div class="textnav"><i class="fas fa-phone-alt"></i> 0123-456-789</div>
+                        <div class="textnav"><i class="fas fa-share"></i> www.yourwebsite.com</div>
+                        <div class="textnav"><i class="far fa-envelope"></i> support@yourwebsite.com</div>
+                        <div class="textnav"><i class="far fa-clock"></i> Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</div>
+                    </div>
+                    <div class="navicon">
+                        <div class="iconnav"><a href="" class="nc"><i class="fab fa-facebook-f"></i></a></div>
+                        <div class="iconnav2"><a href="" class="nc"><i class="fab fa-twitter"></i></a></div>
+                        <div class="iconnav"><a href="" class="nc"><i class="fab fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------
+FOOTER
+----------------->
+<div class="footerbrand">
+    <div class="fbcontainer">
+        <div class="fbtext">
+            <div class="iw-modal-title">
+                <h5><b>INFORMATION</b></h5>
+                <a href=""><p>The brand</p></a>
+                <a href=""><p>Local stores</p></a>
+                <a href=""><p>Customer service</p></a>
+                <a href=""><p>Privacy & cookies</p></a>
+                <a href=""><p>Site map</p></a>
+            </div>
+            <div class="iw-modal-title">
+                <h5><b>Why buy from us</b></h5>
+                <a href=""><p>Shipping & returns</p></a>
+                <a href=""><p>Secure shopping</p></a>
+                <a href=""><p>Testimonials</p></a>
+                <a href=""><p>Award winning </p></a>
+                <a href=""><p>Ethical trading</p></a>
+            </div>
+            <div class="iw-modal-title1">
+                <h5><b>Your account</b></h5>
+                <a href=""><p>Sign in</p></a>
+                <a href=""><p>Register</p></a>
+                <a href=""><p>View cart</p></a>
+                <a href=""><p>View your lookbook </p></a>
+                <a href=""><p>Track an order</p></a>
+                <a href=""><p>Update information</p></a>
+            </div>
+            <div class="iw-modal-title1">
+                <h5><b>Lookbook</b></h5>
+                <a href=""><p>Latest posts</p></a>
+                <a href=""><p>Men’s lookbook</p></a>
+                <a href=""><p>Women’s lookbook</p></a>
+                <a href=""><p>Lookbooks RSS feed</p></a>
+                <a href=""><p>View your lookbook</p></a>
+                <a href=""><p>Delete your lookbook</p></a>
+            </div>
+            <div class="iw-modal-title">
+                <h5><b>Contact details</b></h5>
+                <a href=""><p>Head Office: Avenue Fashion,
+                    180-182 Regent Street, London.</p></a>
+                <a href=""><p>Telephone: 0123-456-789</p></a>
+                <a href=""><p>Email: support@yourwebsite.com</p></a>
+            </div>
+        </div>
+        <div class="fbbanners">
+            <div class="fbblock">
+                <div class="fbaward">
+                    <div class="fbtitle"><b>award winner</b><br>fashion awards 2016</div>
+                </div>
+            </div>
+            <div class="fbblock">
+                <div class="fbsocial">
+                    <div class="fbicon">
+                        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <div class="Z" target="_blank"><a href=""><i class="fab fa-twitter"></i></a></div>
+                        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-bar">
+    <div class="container">
+        <div class="currency"><a href="" class="fblubtn" id="current1">© 2016 Avenue Fashion™ </a></div>
+        <nav class="navmenu">
+            <a href="#" class="fblubtn">Design by RobbyDesigns.com</a>
+            <a href="#" class="fblubtn">Dev by Loremipsum.com</a>
+
+        </nav>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
